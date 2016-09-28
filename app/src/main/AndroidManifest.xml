@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.trasmontano.trasmonmobile">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_contact"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".AuditorMedicoActivity"
+            android:label="@string/title_activity_auditor_medico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssociadoDetalheActivity"
+            android:label="@string/title_activity_associado_detalhe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssociadoActivity"
+            android:label="@string/title_activity_associado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssociadoCarenciasActivity"
+            android:label="@string/title_activity_associado_carencias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssociadoUltimasConsultasActivity"
+            android:label="@string/title_activity_associado_ultimas_consultas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssociadoEntrevistaQualificadaActivity"
+            android:label="@string/title_activity_associado_entrevista_qualificada"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AssociadoEntrevistaQualificadaReportActivity"
+            android:label="@string/title_activity_associado_entrevista_qualificada_report"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

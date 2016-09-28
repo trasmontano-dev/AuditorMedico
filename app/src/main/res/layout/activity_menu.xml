@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="br.com.trasmontano.trasmonmobile.MenuActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorprimary_dark"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/trasmontano_branco_sem_fundo" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_menu" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/coloraccent"
+        android:src="@android:drawable/ic_dialog_email" />-->
+
+    <com.sa90.materialarcmenu.ArcMenu
+        android:id="@+id/arcMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:menu_color="@color/colorprimary_dark"
+        app:menu_scr="@drawable/ic_apps_white_36dp"
+        app:menu_ripple_color="@color/colorPrimaryDark"
+        app:menu_open="arc_left">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_email_white_36dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorprimary_dark"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAuditorMedico"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_local_hospital_white_36dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorprimary_dark"/>
+
+       <!--<android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_map_white_36dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorprimary_dark"/>-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabSignOut"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_exit_to_app_white_36dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="@color/colorprimary_dark"/>
+
+    </com.sa90.materialarcmenu.ArcMenu>
+
+</android.support.design.widget.CoordinatorLayout>

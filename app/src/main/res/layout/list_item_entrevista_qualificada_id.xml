@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow android:layout_marginBottom="10dp" android:background="@drawable/gradient_trasmon_red">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/ic_label_black_36dp"
+                android:adjustViewBounds="false"
+                android:baselineAlignBottom="false" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtId"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="ENTREVISTA ID" />
+
+
+        </LinearLayout>
+    </TableRow>
+</TableLayout>

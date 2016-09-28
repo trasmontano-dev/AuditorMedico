@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '24.0.0'
+
+    defaultConfig {
+        applicationId "br.com.trasmontano.trasmonmobile"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.3"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.sa90.materialarcmenu:library:1.4'
+    compile 'javax.mail:mail:1.4.7'
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+    compile 'com.github.medyo:fancybuttons:1.8.1'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.7.5'
+    compile 'com.github.kingideayou:SlideBottomPanel:1.0.6'
+    compile 'com.github.d-max:spots-dialog:0.4@aar'
+    compile 'com.mikhaellopez:circularimageview:3.0.2'
+}

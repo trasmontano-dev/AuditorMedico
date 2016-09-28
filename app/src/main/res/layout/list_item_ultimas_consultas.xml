@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow android:background="@drawable/gradient_trasmon_red">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lens_black_24dp"/>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewTermo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="Termo" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewDataEmissao"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="20dp"
+                android:text="Data"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewCaraterAtendimento"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="20dp"
+                android:text="CaraterAtendimento"/>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textViewRede"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_marginLeft="20dp"
+                android:text="Rede"/>
+        </LinearLayout>
+    </TableRow>
+
+</TableLayout>
